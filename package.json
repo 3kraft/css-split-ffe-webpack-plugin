@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "prepublish": "./node_modules/.bin/babel -s inline -d ./dist ./src --source-maps true",
+    "install": "./node_modules/.bin/babel -s inline -d ./dist ./src --source-maps true",
     "test": "npm run lint && npm run spec",
     "lint": "eslint .",
     "spec": "NODE_ENV=test ./node_modules/.bin/_mocha --timeout 5000 -r adana-dump --compilers js:babel-core/register -R spec --recursive test/spec/**/*.spec.js"
