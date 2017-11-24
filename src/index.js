@@ -143,7 +143,7 @@ export default class CSSSplitWebpackPlugin {
             chunk.files.push(file.name);
           });
           const content = entry.chunks.map((file) => {
-            return `@import "${publicPath}/${file._name}";`;
+            return `@import "${file._name}";`;
           }).join('\n');
           const imports = this.options.imports({
             ...entry,
