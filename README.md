@@ -10,6 +10,13 @@ Split your CSS for stupid browsers using [webpack] and [postcss].
 
 Using [webpack] to generate your CSS is fun for some definitions of fun. Unfortunately the fun stops when you have a large app and need IE9 support because IE9 will ignore any more than ~4000 selectors in your lovely generated CSS bundle. The solution is to split your CSS bundle smartly into multiple smaller CSS files. Now _you can_.™ Supports source-maps.
 
+## Changes
+
+This fork contains the following changes:
+
+  - it will output a split file even if there is only 1 split file generated
+  - it will generate a relative path into the @import
+
 ## Installation
 
 ```sh
