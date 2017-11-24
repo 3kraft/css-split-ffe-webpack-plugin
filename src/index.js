@@ -137,11 +137,6 @@ export default class CSSSplitWebpackPlugin {
       const items = input.map((name) => this.file(name, assets[name]));
       return Promise.all(items).then((entries) => {
         entries.forEach((entry) => {
-          // Skip the splitting operation for files that result in no
-          // split occuring.
-          if (entry.chunks.length === 1) {
-            return;
-          }
           // Inject the new files into the chunk.
           entry.chunks.forEach((file) => {
             assets[file.name] = file;
