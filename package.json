@@ -1,9 +1,10 @@
 {
-  "name": "css-split-webpack-plugin",
-  "version": "0.2.5",
+  "name": "css-split-ffe-webpack-plugin",
+  "version": "0.2.6-SNAPSHOT",
   "author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
+  "contributors": [{ "name": "Florian Bruckner", "email": "florian.bruckner@3kraft.com"}],
   "license": "CC0-1.0",
-  "repository": "metalabdesign/css-split-webpack-plugin",
+  "repository": "3kraft/css-split-webpack-plugin",
   "main": "dist/index.js",
   "keywords": [
     "webpack-plugin",
